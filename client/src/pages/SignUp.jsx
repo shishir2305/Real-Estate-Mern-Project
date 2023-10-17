@@ -25,6 +25,7 @@ function SignUp() {
       if (data.success === false) {
         setError(data.message);
         setLoading(false);
+        return;
       }
       setLoading(false);
       setError(null);
