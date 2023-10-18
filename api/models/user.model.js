@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    avatar: {
+      type: String,
+      default: "https://gymkhana.iitb.ac.in/~sports/images/profile.png",
+    },
   },
   { timestamps: true }
 );
